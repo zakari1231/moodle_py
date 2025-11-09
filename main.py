@@ -91,14 +91,15 @@ def get_credentials_pdf(
     for line in lines:
         pdf.cell(0, 8, txt=line, ln=True)
 
-    # stream the PDF
-    pdf_bytes = io.BytesIO()
-    pdf.output(pdf_bytes)
-    pdf_bytes.seek(0)
+    # ✅ Correct way to get PDF bytes
+    pdf_bytes = io.BytesIO(pdf.output(dest="S").encode("latin1"))
+
     filename = f"{record.get('firstname','user')}_{record.get('lastname','user')}_credentials.pdf"
-    return StreamingResponse(pdf_bytes, media_type="application/pdf", headers={
-        "Content-Disposition": f"attachment; filename={filename}"
-    })
+    return StreamingResponse(
+        pdf_bytes,
+        media_type="application/pdf",
+        headers={"Content-Disposition": f"attachment; filename={filename}"}
+    )
 
 # If you later want to serve static files (css/js), mount a static folder:
 # app.mount("/static", StaticFiles(directory="static"), name="static")
