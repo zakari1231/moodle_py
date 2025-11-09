@@ -1,12 +1,3 @@
-Excellent 🔥 — I’m glad it’s working perfectly!
-Here’s a clean, ready-to-use **`README.md`** that you can include in your GitHub repository.
-It explains everything — from what the app does to how to deploy it or integrate it into a university website.
-
----
-
-## 📘 README.md
-
-```markdown
 # 🎓 GTU Student Credential API
 
 A simple and secure FastAPI-based web application that allows **students to retrieve their university credentials** (username and password) from a local `.csv` database.
@@ -182,6 +173,5 @@ Made with ❤️ using FastAPI & FPDF
 
 ---
 
-Would you like me to also generate the `requirements.txt` file automatically (based on your working app)?  
-It’ll make your GitHub setup immediately ready for deployment.
-```
+
+
