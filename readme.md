@@ -152,26 +152,3 @@ If you want to integrate this app **as an API only** (without using the included
 
 ---
 
-## 👨‍💻 Author
-
-Developed for GTU (Gestion des Techniques Urbaines) —
-A lightweight, secure solution for student credential distribution.
-
-```
-Made with ❤️ using FastAPI & FPDF
-```
-
----
-
-```
-
----
-
-### 📦 Where to Put It
-- Save this file as `README.md` in the **root folder** of your project (same level as `main.py`).
-- When you push to GitHub, GitHub will **automatically render it** on the repository’s front page.
-
----
-
-
-
